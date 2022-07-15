@@ -15,10 +15,11 @@ public class MainClass {
         System.out.println(" --- start ---");
         System.out.println("Accepted?: " + ceStatus.ceStatus());
         System.out.println("Rejected?: " + ceStatusRejected.ceStatus());
-        System.out.println(" --- end ---");
 
         // Auto-generated toString() method
         System.out.println("toString: " + ceStatus);
+
+        System.out.println("Check Equal");
 
         if (ceStatus.equals(ceStatusRejected)) {
             System.out.println("Equal");
@@ -31,5 +32,9 @@ public class MainClass {
         } else {
             System.out.println("Not Equal");
         }
+        System.out.println(" --- end ---");
+
+        System.out.println("runtime on mac: 75 ms On windows 300 ms");
+
     }
 }
