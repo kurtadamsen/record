@@ -44,6 +44,11 @@ public class MainClass {
         log.info("");
         DateFeature dateFeature = new DateFeature();
         dateFeature.checkDate();
+        StreamFeature streamFeature = new StreamFeature();
+        streamFeature.checkStream();
+
+        OtherFeatures otherFeatures = new OtherFeatures();
+        otherFeatures.checkFeatures();
 
     }
 }
