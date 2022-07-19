@@ -1,6 +1,10 @@
 package dk.tdc.test;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class MainClass {
+    private static final Logger log = LoggerFactory.getLogger(MainClass.class);
 
 
     // Main driver method
@@ -35,6 +39,11 @@ public class MainClass {
         System.out.println(" --- end ---");
 
         System.out.println("runtime on mac: 75 ms On windows 300 ms");
+
+        log.info("--------------------------------------------------------");
+        log.info("");
+        DateFeature dateFeature = new DateFeature();
+        dateFeature.checkDate();
 
     }
 }

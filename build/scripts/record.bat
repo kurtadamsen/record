@@ -67,7 +67,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\record-1.0-SNAPSHOT.jar
+set CLASSPATH=%APP_HOME%\lib\record-1.0-SNAPSHOT.jar;%APP_HOME%\lib\slf4j-reload4j-1.7.36.jar;%APP_HOME%\lib\slf4j-api-1.7.36.jar;%APP_HOME%\lib\reload4j-1.2.19.jar
 
 
 @rem Execute record
